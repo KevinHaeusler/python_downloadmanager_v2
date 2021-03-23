@@ -4,7 +4,7 @@ import re
 
 download_folder = r'C:\Users\Kevin Haeusler\Downloads'
 download_files = os.listdir(download_folder)
-downloading_file = ''
+
 # Set Destination Folders
 exe_folder = r'C:\Users\Kevin Haeusler\Downloads\EXE'
 misc_folder = r'C:\Users\Kevin Haeusler\Downloads\MISCELLANEOUS'
@@ -12,9 +12,9 @@ pdf_folder = r'C:\Users\Kevin Haeusler\Downloads\PDF'
 pictures_folder = r'C:\Users\Kevin Haeusler\Downloads\PICTURES'
 videos_folder = r'C:\Users\Kevin Haeusler\Downloads\VIDEOS'
 zip_folder = r'C:\Users\Kevin Haeusler\Downloads\ZIP'
+
 # Exclude Destination Folders
 excluded_folders = ["EXE", "MISCELLANEOUS", "PDF", "PICTURES", "VIDEOS", "ZIP"]
-# Set Log File
 
 def move_file(file, extension):
     if file not in excluded_folders:
